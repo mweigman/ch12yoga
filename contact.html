@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Path of Light Yoga Studio </title>
+    <meta charset="uft 8">
+    <link rel="stylesheet" type="text/css" href="yoga.css">
+    <link rel="icon" type="image/x-icon" href="externalmedia/favicon.ico">
+    <meta name="author" content="Melissa Weigman">
+    <meta name="description" content="Path of Light Content Page">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1> Path of Light Yoga Studio </h1></header>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="classes.html"> Classes </a></li>
+            <li><a href="schedule.html"> Schedule </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2> Contact Path of Light Studio </h2>
+
+        Required information is marked with an asterisk *.
+
+        <form method="post" action="https://webdevbasics.net/scripts/yoga.php">
+
+            <label for="myName">*Name:</label>
+            <input type="text" name="myName" id="myName" required>
+
+            <label for="myEmail">*E-mail:</label>
+            <input type="email" name="myEmail" id="myEmail" required>
+
+            <label for="how">*How did you hear about us?</label>
+            <input list="data" name="how" id="how">
+
+            <datalist id="data">
+                <option value="Google"></option>
+                <option value="Bing"></option>
+                <option value="Facebook"></option>
+                <option value="Friend"></option>
+                <option value="Radio Ad"></option>
+            </datalist>
+
+            <label for="myComments">*Comments:</label>
+
+            <textarea name="myComments" id="myComments" rows="2" cols="20" required></textarea>
+
+            <input type="submit" value="Send Now">
+
+        </form>
+
+    </main>
+    <footer>
+        <br> Copyright &copy; 2018 Path of Light Yoga Studio
+        <br> <a href="mailto:melissa@weigman.com"> melissa@weigman.com </a>
+        <p><a href="privacypolicy.html"> Privacy Policy </a></p>
+    </footer>
+</div>
+</body>
+</html>

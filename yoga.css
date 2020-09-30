@@ -1,0 +1,335 @@
+/* ---- Path of Light Case Study _ Chapter 4 ---- */
+
+* {
+    box-sizing: border-box;
+}
+
+header, main, nav, footer, figure, figcaption, aside, section, article {
+    display: block;
+}
+
+body {
+    background-color: #3F2860;
+    font-family: Verdana, Arial, sans-serif;
+    color: #3F2860;
+}
+
+header {
+    background-color: #9BC1C2;
+    background-image: url("externalmedia/lilyheader.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+
+main {
+    padding: 0 3em 3em;
+    display: block;
+    margin-left: 170px;
+}
+
+nav {
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+    float: left;
+    width: 190px;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    border: outset;
+    border-color: #CCCCCC;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+
+nav a:link {
+    color: #3F2860;
+}
+
+nav a:visited {
+    color: #497777;
+}
+
+nav a:hover {
+    color: #A26100;
+    border: inset #333333 3px;
+    background-color: #B6D2D3;
+    transition: background-color ease-out 3s;
+}
+
+h1 {
+    padding-top: 50px;
+    padding-left: 2em;
+}
+
+footer {
+    background-color: #9BC1C2;
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
+}
+
+li {
+    font-size: 90%;
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    min-width: 550px;
+    max-width: 1280px;
+    color: #3F2860;
+    background-color: #F5F5F5;
+}
+
+#mathero {
+    height: 300px;
+    background-image: url("externalmedia/yogamat.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#loungehero {
+    height: 300px;
+    background-image: url("externalmedia/yogalounge.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#privacy {
+    height: 300px;
+    background-image: url("externalmedia/privacy-policy.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 3%;
+}
+
+ol, li {
+    border: none;
+    color: #3F2860;
+    font-style: normal;
+    text-align: left;
+    border-spacing: 5px;
+    font-weight: bold;
+}
+
+ol a:visited {
+    color: #497777;
+}
+
+ol a:hover {
+    color: #A26100;
+}
+
+.floatleft {
+    float: left;
+    margin-right: 4em;
+}
+
+.clear {
+    clear: both;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border: 1px solid #3F2860;
+    margin-bottom: 1em;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0.5em;
+    border: 1px solid #3F2860;
+}
+
+tr:nth-of-type(even) {
+    background-color: #D7E8E9;
+}
+
+table caption {
+    margin: 1em;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 10em;
+    padding-right: 1em;
+    /*
+        clear: left;
+        margin-top: 10px;
+    */
+}
+
+input, textarea {
+    display: block;
+    margin-bottom: 2em;
+}
+
+input[type="submit"] {
+    margin-left: 12em;
+}
+
+form {
+    padding: 3em;
+}
+
+audio {
+    margin: 1em;
+}
+
+/* PHONE NUMBER DESKTOP DISPLAY CONFIGURATION */
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: inline;
+}
+
+/* TABLE DISPLAY CONFIGURATION */
+
+@media only screen and (max-width: 64em) {
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #wrapper {
+        min-width: 0;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        padding-top: 1px;
+    }
+
+    main {
+        padding-top: 0;
+        padding-bottom: 2.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin: 0;
+        font-size: 90%;
+        clear: both; /* ---- USED TO CLEAR ALL FLOATS ---- */
+    }
+
+    nav {
+        float: none;
+        width: auto;
+        padding-left: 2em;
+    }
+
+    nav a:link {
+        padding: 0.2em;
+        margin-left: 0.3em;
+        float: left;
+        width: 23%;
+    }
+
+    h2, h3, p, dl {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    main ul {
+        margin-left: 2em;
+    }
+
+    .floatleft {
+        margin-left: 2em;
+        margin-bottom: 1em;
+    }
+
+    .clear {
+        padding-left: 2em;
+    }
+
+    #mathero, #loungehero, #privacy {
+        height: 150px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/* SMARTPHONE DISPLAY CONFIGURATION */
+
+@media only screen and (max-width: 37.5em) {
+
+    h1 {
+        font-size: 2em;
+        padding-top: 0.25em;
+        padding-left: 1.5em;
+        width: 85%;
+        text-align: center;
+    }
+
+    nav a:link {
+        padding: 0.5em;
+        width: 45%;
+        float: left;
+        min-width: 6em;
+        margin-left: 0.5em;
+    }
+
+    li {
+        font-size: 100%;
+    }
+
+    .floatleft {
+        float: none;
+        display: none;
+    }
+
+    #mathero, #loungehero, #privacy {
+        background-image: none;
+        height: 0;
+    }
+
+    footer {
+        padding: 0.5em;
+        margin: 0;
+    }
+
+    #mobile {
+        display: inline;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    label {
+        float: none;
+        text-align: left;
+    }
+
+    input[type="submit"] {
+        margin-left: 0;
+    }
+
+}
